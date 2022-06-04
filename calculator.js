@@ -18,8 +18,16 @@ const modulus = function(a,b) {
     return a % b;
 }
 
-const evenOrOdd = function(a) {
+const even = function(a) {
     if(a % 2 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+const odd = function(a) {
+    if(a % 2 == 1) {
         return true;
     } else {
         return false;
@@ -32,6 +40,6 @@ module.exports = {
     multiply, 
     divide, 
     modulus, 
-    even, 
-    odd 
+    even,
+    odd
 };
